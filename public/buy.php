@@ -50,7 +50,7 @@
     }
     else
     {
-        // else render form
+        // else render form0
         render("buy_form.php", ["title" => "Buy"]);
     }
 
