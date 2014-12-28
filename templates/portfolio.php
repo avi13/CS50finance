@@ -10,10 +10,7 @@
             print("<td>{$position["shares"]}</td>");
             print("<td>{$position["price"]}</td>");
             print("</tr>");
-        }/*
-        print("<tr>");
-        print("<td>Available cash = {$cash}</td>");
-        print("</tr>");*/
+        }
     ?>
     </table>
     <p>

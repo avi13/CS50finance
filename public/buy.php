@@ -41,6 +41,7 @@
                     else
                     {
                         query("UPDATE users SET cash=cash-? WHERE id=?",($_POST["quantity"] * $stock["price"]),$_SESSION["id"]);
+                        query("INSERT INTO history (transaction, symbol, id, shares, price) VALUES ('BUY',?,?,?,?)",$stockname,$_SESSION["id"],$_POST["quantity"],$stock["price"]);
                     }
                     redirect("index.php");
                     
